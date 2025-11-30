@@ -1,0 +1,353 @@
+[gd_scene load_steps=11 format=3 uid="uid://djo8s8v6goqo5"]
+
+[ext_resource type="Script" uid="uid://010js5ubvq4a" path="res://color_group.gd" id="1_t5odh"]
+[ext_resource type="Script" uid="uid://51277b6tacdv" path="res://verify_group.gd" id="2_xwjjp"]
+[ext_resource type="Script" uid="uid://bf1qqi2qeeyji" path="res://attempt_counter.gd" id="3_norob"]
+[ext_resource type="Script" uid="uid://duorroteth0pl" path="res://rich_text_label.gd" id="4_yla3h"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_cwsi1"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_t5odh"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_xwjjp"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_t5odh"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_xwjjp"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_norob"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(0, -100)
+
+[node name="Colors" type="Node2D" parent="."]
+position = Vector2(125, 540)
+scale = Vector2(1.5, 1.5)
+
+[node name="ColorGroup" type="Node2D" parent="Colors"]
+scale = Vector2(2, 2)
+script = ExtResource("1_t5odh")
+
+[node name="DownButton" type="MeshInstance2D" parent="Colors/ColorGroup"]
+position = Vector2(0, 47)
+scale = Vector2(50, 25)
+mesh = SubResource("PrismMesh_cwsi1")
+
+[node name="Button" type="Button" parent="Colors/ColorGroup/DownButton"]
+offset_left = -0.5
+offset_top = -0.5
+offset_right = 7.5
+offset_bottom = 7.5
+scale = Vector2(0.1248919, 0.12503296)
+focus_mode = 0
+flat = true
+
+[node name="Color" type="MeshInstance2D" parent="Colors/ColorGroup/DownButton"]
+position = Vector2(0, -0.16)
+scale = Vector2(0.25, 0.5)
+mesh = SubResource("SphereMesh_t5odh")
+
+[node name="UpButton" type="MeshInstance2D" parent="Colors/ColorGroup"]
+position = Vector2(0, -47)
+rotation = -3.1415925
+scale = Vector2(50, 25)
+mesh = SubResource("PrismMesh_cwsi1")
+
+[node name="Button" type="Button" parent="Colors/ColorGroup/UpButton"]
+offset_left = -0.5
+offset_top = -0.5
+offset_right = 7.5
+offset_bottom = 7.5
+scale = Vector2(0.1248919, 0.12503296)
+focus_mode = 0
+flat = true
+
+[node name="Color" type="MeshInstance2D" parent="Colors/ColorGroup/UpButton"]
+position = Vector2(-1.20796635e-08, -0.16)
+scale = Vector2(0.25, 0.5)
+mesh = SubResource("SphereMesh_xwjjp")
+
+[node name="Color" type="MeshInstance2D" parent="Colors/ColorGroup"]
+scale = Vector2(50, 50)
+mesh = SubResource("BoxMesh_t5odh")
+
+[node name="ColorGroup2" type="Node2D" parent="Colors"]
+position = Vector2(125, 0)
+scale = Vector2(2, 2)
+script = ExtResource("1_t5odh")
+
+[node name="DownButton" type="MeshInstance2D" parent="Colors/ColorGroup2"]
+position = Vector2(0, 47)
+scale = Vector2(50, 25)
+mesh = SubResource("PrismMesh_cwsi1")
+
+[node name="Button" type="Button" parent="Colors/ColorGroup2/DownButton"]
+offset_left = -0.5
+offset_top = -0.5
+offset_right = 7.5
+offset_bottom = 7.5
+scale = Vector2(0.1248919, 0.12503296)
+focus_mode = 0
+flat = true
+
+[node name="Color" type="MeshInstance2D" parent="Colors/ColorGroup2/DownButton"]
+position = Vector2(0, -0.16)
+scale = Vector2(0.25, 0.5)
+mesh = SubResource("SphereMesh_t5odh")
+
+[node name="UpButton" type="MeshInstance2D" parent="Colors/ColorGroup2"]
+position = Vector2(0, -47)
+rotation = -3.1415925
+scale = Vector2(50, 25)
+mesh = SubResource("PrismMesh_cwsi1")
+
+[node name="Button" type="Button" parent="Colors/ColorGroup2/UpButton"]
+offset_left = -0.5
+offset_top = -0.5
+offset_right = 7.5
+offset_bottom = 7.5
+scale = Vector2(0.1248919, 0.12503296)
+focus_mode = 0
+flat = true
+
+[node name="Color" type="MeshInstance2D" parent="Colors/ColorGroup2/UpButton"]
+position = Vector2(-1.20796635e-08, -0.16)
+scale = Vector2(0.25, 0.5)
+mesh = SubResource("SphereMesh_xwjjp")
+
+[node name="Color" type="MeshInstance2D" parent="Colors/ColorGroup2"]
+scale = Vector2(50, 50)
+mesh = SubResource("BoxMesh_t5odh")
+
+[node name="ColorGroup3" type="Node2D" parent="Colors"]
+position = Vector2(250, 0)
+scale = Vector2(2, 2)
+script = ExtResource("1_t5odh")
+
+[node name="DownButton" type="MeshInstance2D" parent="Colors/ColorGroup3"]
+position = Vector2(0, 47)
+scale = Vector2(50, 25)
+mesh = SubResource("PrismMesh_cwsi1")
+
+[node name="Button" type="Button" parent="Colors/ColorGroup3/DownButton"]
+offset_left = -0.5
+offset_top = -0.5
+offset_right = 7.5
+offset_bottom = 7.5
+scale = Vector2(0.1248919, 0.12503296)
+focus_mode = 0
+flat = true
+
+[node name="Color" type="MeshInstance2D" parent="Colors/ColorGroup3/DownButton"]
+position = Vector2(0, -0.16)
+scale = Vector2(0.25, 0.5)
+mesh = SubResource("SphereMesh_t5odh")
+
+[node name="UpButton" type="MeshInstance2D" parent="Colors/ColorGroup3"]
+position = Vector2(0, -47)
+rotation = -3.1415925
+scale = Vector2(50, 25)
+mesh = SubResource("PrismMesh_cwsi1")
+
+[node name="Button" type="Button" parent="Colors/ColorGroup3/UpButton"]
+offset_left = -0.5
+offset_top = -0.5
+offset_right = 7.5
+offset_bottom = 7.5
+scale = Vector2(0.1248919, 0.12503296)
+focus_mode = 0
+flat = true
+
+[node name="Color" type="MeshInstance2D" parent="Colors/ColorGroup3/UpButton"]
+position = Vector2(-1.20796635e-08, -0.16)
+scale = Vector2(0.25, 0.5)
+mesh = SubResource("SphereMesh_xwjjp")
+
+[node name="Color" type="MeshInstance2D" parent="Colors/ColorGroup3"]
+scale = Vector2(50, 50)
+mesh = SubResource("BoxMesh_t5odh")
+
+[node name="ColorGroup4" type="Node2D" parent="Colors"]
+position = Vector2(375, 0)
+scale = Vector2(2, 2)
+script = ExtResource("1_t5odh")
+
+[node name="DownButton" type="MeshInstance2D" parent="Colors/ColorGroup4"]
+position = Vector2(0, 47)
+scale = Vector2(50, 25)
+mesh = SubResource("PrismMesh_cwsi1")
+
+[node name="Button" type="Button" parent="Colors/ColorGroup4/DownButton"]
+offset_left = -0.5
+offset_top = -0.5
+offset_right = 7.5
+offset_bottom = 7.5
+scale = Vector2(0.1248919, 0.12503296)
+focus_mode = 0
+flat = true
+
+[node name="Color" type="MeshInstance2D" parent="Colors/ColorGroup4/DownButton"]
+position = Vector2(0, -0.16)
+scale = Vector2(0.25, 0.5)
+mesh = SubResource("SphereMesh_t5odh")
+
+[node name="UpButton" type="MeshInstance2D" parent="Colors/ColorGroup4"]
+position = Vector2(0, -47)
+rotation = -3.1415925
+scale = Vector2(50, 25)
+mesh = SubResource("PrismMesh_cwsi1")
+
+[node name="Button" type="Button" parent="Colors/ColorGroup4/UpButton"]
+offset_left = -0.5
+offset_top = -0.5
+offset_right = 7.5
+offset_bottom = 7.5
+scale = Vector2(0.1248919, 0.12503296)
+focus_mode = 0
+flat = true
+
+[node name="Color" type="MeshInstance2D" parent="Colors/ColorGroup4/UpButton"]
+position = Vector2(-1.20796635e-08, -0.16)
+scale = Vector2(0.25, 0.5)
+mesh = SubResource("SphereMesh_xwjjp")
+
+[node name="Color" type="MeshInstance2D" parent="Colors/ColorGroup4"]
+scale = Vector2(50, 50)
+mesh = SubResource("BoxMesh_t5odh")
+
+[node name="ColorGroup5" type="Node2D" parent="Colors"]
+position = Vector2(500, 0)
+scale = Vector2(2, 2)
+script = ExtResource("1_t5odh")
+
+[node name="DownButton" type="MeshInstance2D" parent="Colors/ColorGroup5"]
+position = Vector2(0, 47)
+scale = Vector2(50, 25)
+mesh = SubResource("PrismMesh_cwsi1")
+
+[node name="Button" type="Button" parent="Colors/ColorGroup5/DownButton"]
+offset_left = -0.5
+offset_top = -0.5
+offset_right = 7.5
+offset_bottom = 7.5
+scale = Vector2(0.1248919, 0.12503296)
+focus_mode = 0
+flat = true
+
+[node name="Color" type="MeshInstance2D" parent="Colors/ColorGroup5/DownButton"]
+position = Vector2(0, -0.16)
+scale = Vector2(0.25, 0.5)
+mesh = SubResource("SphereMesh_t5odh")
+
+[node name="UpButton" type="MeshInstance2D" parent="Colors/ColorGroup5"]
+position = Vector2(0, -47)
+rotation = -3.1415925
+scale = Vector2(50, 25)
+mesh = SubResource("PrismMesh_cwsi1")
+
+[node name="Button" type="Button" parent="Colors/ColorGroup5/UpButton"]
+offset_left = -0.5
+offset_top = -0.5
+offset_right = 7.5
+offset_bottom = 7.5
+scale = Vector2(0.1248919, 0.12503296)
+focus_mode = 0
+flat = true
+
+[node name="Color" type="MeshInstance2D" parent="Colors/ColorGroup5/UpButton"]
+position = Vector2(-1.20796635e-08, -0.16)
+scale = Vector2(0.25, 0.5)
+mesh = SubResource("SphereMesh_xwjjp")
+
+[node name="Color" type="MeshInstance2D" parent="Colors/ColorGroup5"]
+scale = Vector2(50, 50)
+mesh = SubResource("BoxMesh_t5odh")
+
+[node name="VerifyGroup" type="Node2D" parent="."]
+script = ExtResource("2_xwjjp")
+
+[node name="VerifyButton" type="MeshInstance2D" parent="VerifyGroup"]
+position = Vector2(1434.5, 540)
+scale = Vector2(868.99994, 150)
+mesh = SubResource("BoxMesh_xwjjp")
+
+[node name="Button" type="Button" parent="VerifyGroup/VerifyButton"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -0.49999985
+offset_top = -0.49999985
+offset_right = 111.5
+offset_bottom = 30.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.008920409, 0.03221333)
+focus_mode = 0
+flat = true
+
+[node name="Timer" type="Timer" parent="VerifyGroup/VerifyButton"]
+one_shot = true
+
+[node name="ButtonLabel" type="RichTextLabel" parent="VerifyGroup"]
+offset_left = 1000.0
+offset_top = 465.00003
+offset_right = 1869.0
+offset_bottom = 615.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "Verify Answer"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResultLabel" type="RichTextLabel" parent="VerifyGroup"]
+offset_left = 1000.0
+offset_top = 615.0
+offset_right = 1869.0
+offset_bottom = 765.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 42
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AttemptCounter" type="RichTextLabel" parent="."]
+offset_left = 525.0
+offset_top = 814.0
+offset_right = 1394.0
+offset_bottom = 964.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "ATTEMPT"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_norob")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_top = 100.0
+offset_right = 1920.0
+offset_bottom = 1180.0
+theme_override_font_sizes/normal_font_size = 128
+text = "You win!!!!!!!!"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_yla3h")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="RichTextLabel"]
+modulate = Color(0, 0, 0, 0.37254903)
+show_behind_parent = true
+scale = Vector2(3840, 2160)
+mesh = SubResource("BoxMesh_norob")
+
+[connection signal="ready" from="Colors" to="VerifyGroup" method="_on_colors_ready"]
+[connection signal="attempt" from="VerifyGroup" to="AttemptCounter" method="_on_verify_group_attempt"]
+[connection signal="game_win" from="VerifyGroup" to="RichTextLabel" method="_on_verify_group_game_win"]
+[connection signal="pressed" from="VerifyGroup/VerifyButton/Button" to="VerifyGroup" method="_on_button_pressed"]
+[connection signal="timeout" from="VerifyGroup/VerifyButton/Timer" to="VerifyGroup" method="_on_timer_timeout"]
